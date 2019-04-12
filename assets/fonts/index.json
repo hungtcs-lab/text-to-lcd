@@ -1,6 +1,7 @@
 [
   { "name": "SGK075", "file": "SGK075-1.ttf" },
-  { "name": "Aura Dian Zhen Song 2", "file": "AuraDianZhenSong-2.ttf" },
+  { "name": "Aura", "file": "Aura.ttf" },
+  { "name": "开源点阵字体", "file": "开源点阵字体.ttf" },
   { "name": "Envy Code B 10pt", "file": "Envy-Code-B-10pt.ttf" },
   { "name": "Proggy Clean SZ-1", "file": "ProggyCleanSZ-1.ttf" },
   { "name": "Proggy Clean SZBP-2", "file": "ProggyCleanSZBP-2.ttf" },
