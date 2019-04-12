@@ -1,0 +1,27 @@
+
+:host {
+  height: 64px;
+  display: flex;
+  padding: 0px 18px;
+  flex-flow: row nowrap;
+  align-items: center;
+  > h2 {
+    flex: 1 1 auto;
+    margin: 0px;
+    display: flex;
+    font-size: 22px;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-weight: normal;
+    font-family: 'Product Sans', Arial, sans-serif;
+    > img {
+      flex: 0 0 auto;
+      height: 38px;
+    }
+    > span {
+      flex: 1 1 auto;
+      display: block;
+      margin-left: 12px;
+    }
+  }
+}

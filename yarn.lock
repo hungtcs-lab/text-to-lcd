@@ -344,6 +344,11 @@
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.9.5.tgz#162b864bc70be077e6db212b322754917929e976"
   integrity sha1-FiuGS8cL4Hfm2yErMidUkXkp6XY=
 
+"@types/opentype.js@^0.7.2":
+  version "0.7.2"
+  resolved "http://registry.npm.taobao.org/@types/opentype.js/download/@types/opentype.js-0.7.2.tgz#ced5b117a5736578c6b9d835e35b0204c6ef2e8f"
+  integrity sha1-ztWxF6VzZXjGudg141sCBMbvLo8=
+
 "@types/q@^0.0.32":
   version "0.0.32"
   resolved "http://registry.npm.taobao.org/@types/q/download/@types/q-0.0.32.tgz#bd284e57c84f1325da702babfc82a5328190c0c5"
@@ -4833,6 +4838,14 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+opentype.js@^0.11.0:
+  version "0.11.0"
+  resolved "http://registry.npm.taobao.org/opentype.js/download/opentype.js-0.11.0.tgz#310f3fb85f09ca6cf22ac8cf540df67b418c3351"
+  integrity sha1-MQ8/uF8JymzyKsjPVA32e0GMM1E=
+  dependencies:
+    string.prototype.codepointat "^0.2.1"
+    tiny-inflate "^1.0.2"
+
 opn@5.3.0:
   version "5.3.0"
   resolved "http://registry.npm.taobao.org/opn/download/opn-5.3.0.tgz#64871565c863875f052cfdf53d3e3cb5adb53b1c"
@@ -6500,6 +6513,11 @@ string-width@^1.0.1, string-width@^1.0.2:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^4.0.0"
 
+string.prototype.codepointat@^0.2.1:
+  version "0.2.1"
+  resolved "http://registry.npm.taobao.org/string.prototype.codepointat/download/string.prototype.codepointat-0.2.1.tgz#004ad44c8afc727527b108cd462b4d971cd469bc"
+  integrity sha1-AErUTIr8cnUnsQjNRitNlxzUabw=
+
 string_decoder@^1.0.0, string_decoder@^1.1.1:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/string_decoder/download/string_decoder-1.2.0.tgz#fe86e738b19544afe70469243b2a1ee9240eae8d"
@@ -6712,6 +6730,11 @@ timers-browserify@^2.0.4:
   integrity sha1-HSjj0qrfHVpZlsTp+VYBzQU0gK4=
   dependencies:
     setimmediate "^1.0.4"
+
+tiny-inflate@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/tiny-inflate/download/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
+  integrity sha1-k9nez/yIBb1X6uQxDwt0Xptvs6c=
 
 tmp@0.0.30:
   version "0.0.30"

@@ -1,0 +1,44 @@
+<header>
+  <label>
+    <span>文本：</span>
+    <input type="text" [(ngModel)]="text" />
+  </label>
+  <label>
+    <span>宽度：</span>
+    <input type="number" step="8" [(ngModel)]="characterBitmapWidth" />
+  </label>
+  <label>
+    <span>高度：</span>
+    <input type="number" step="8" [(ngModel)]="characterBitmapHeight" />
+  </label>
+  <label>
+    <span>字体：</span>
+    <select name="fontFamily" [(ngModel)]="fontIndex">
+      <option *ngFor="let font of fontsList" [ngValue]="font">{{ font.name }}</option>
+    </select>
+  </label>
+  <label>
+    <span>字体大小：</span>
+    <input type="number" [(ngModel)]="fontSize" />
+  </label>
+  <label>
+    <span>颜色阈值：</span>
+    <input type="range" min="10" max="254" [(ngModel)]="colorThreshold" />
+  </label>
+  <button (click)="positionY = positionY - 1;">上</button>
+  <button (click)="positionY = positionY + 1;">下</button>
+  <button (click)="positionX = positionX - 1;">左</button>
+  <button (click)="positionX = positionX + 1;">右</button>
+  <button (click)="resetPosition();">还原({{ positionX }}, {{ positionY }})</button>
+  <hr />
+  <button (click)="generate();">生成</button>
+</header>
+
+<main>
+  <div *ngIf="fontIndex" class="preview">
+    <tcs-character-panel *ngFor="let character of characters;" [x]="positionX" [y]="positionY" [font]="font" [fontSize]="fontSize"
+        [width]="characterBitmapWidth" [height]="characterBitmapHeight"
+        [character]="character" [colorThreshold]="colorThreshold"></tcs-character-panel>
+  </div>
+  <textarea class="code" [(ngModel)]="codeSnippet"></textarea>
+</main>

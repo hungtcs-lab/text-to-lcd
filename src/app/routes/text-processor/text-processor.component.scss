@@ -1,0 +1,37 @@
+
+:host {
+  height: 100%;
+  display: flex;
+  overflow: hidden;;
+  flex-flow: column nowrap;
+  > header {
+    flex: 0 0 auto;
+  }
+  > main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    > .preview,
+    > .code {
+      flex: 1 1 auto;
+      height: 0;
+    }
+    > .preview {
+      display: flex;
+      padding: 16px;
+      overflow: auto;
+      flex-flow: row wrap;
+      background-color: #CCC;
+      > tcs-character-panel {
+        flex: 0 0 auto;
+        margin-right: 2px;
+      }
+    }
+    > .code {
+      padding: 16px;
+      overflow: auto;
+      margin-top: 12px;
+      white-space: pre;
+    }
+  }
+}

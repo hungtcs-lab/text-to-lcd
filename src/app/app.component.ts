@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'tcs-text-to-lcd-root',
+  template: `<router-outlet></router-outlet>`,
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'text-to-lcd';
+
 }

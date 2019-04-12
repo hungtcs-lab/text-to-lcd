@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/elevations";
+
+html, body {
+  width: 100vw;
+  margin: 0px;
+  height: 100vh;
+  padding: 0px;
+  overflow: hidden;
+}
